@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+       
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                     http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"  
+  metadata-complete="true">              
+
+<jsp-config>                                                        
+  <jsp-property-group>                                     
+    <url-pattern>                        
+    *.jsp
+    </url-pattern>                
+    <page-encoding>
+    UTF-8
+    </page-encoding>                 
+  </jsp-property-group> 
+</jsp-config> 
+<servlet>       
+<servlet-name> JsonTest </servlet-name>    
+<servlet-class> user_services.ProfileData </servlet-class>     
+</servlet>
+
+<servlet-mapping>
+<servlet-name>JsonTest</servlet-name>
+<url-pattern>/jst</url-pattern>    
+</servlet-mapping> 
+ 
+
+<!-- Mapping from registeration -->
+<servlet>       
+<servlet-name>register</servlet-name>    
+<servlet-class> user_services.registerUser </servlet-class>     
+</servlet>
+
+<servlet-mapping>  
+<servlet-name>register</servlet-name>
+<url-pattern>/register</url-pattern>    
+</servlet-mapping>
+<!-- Mapping from registeration end-->
+
+
+<!-- Mapping from Profile -->
+<servlet>       
+<servlet-name>profile</servlet-name>    
+<servlet-class> user_services.ProfileData</servlet-class>     
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>profile</servlet-name>
+<url-pattern>/profile</url-pattern>    
+</servlet-mapping>
+<!-- Mapping from Profile end-->
+
+
+
+<!-- Mapping from updateProfile -->
+<servlet>       
+<servlet-name>profileU</servlet-name>    
+<servlet-class> user_services.updateProfile</servlet-class>     
+</servlet>
+
+<servlet-mapping>
+<servlet-name>profileU</servlet-name>
+<url-pattern>/profileU</url-pattern>    
+</servlet-mapping>
+<!-- Mapping from updateProfile end-->
+
+
+
+<!-- Mapping from userLogin -->
+<servlet>       
+<servlet-name>ulogin</servlet-name>    
+<servlet-class> user_services.loginUser</servlet-class>     
+</servlet>
+
+<servlet-mapping> 
+<servlet-name>ulogin</servlet-name>
+<url-pattern>/ulogin</url-pattern>    
+</servlet-mapping>
+<!-- Mapping from userLogin end-->
+
+<!-- Mapping for multimedia postSetter -->
+<servlet>
+<servlet-name>mmpost</servlet-name>    
+<servlet-class> global_services.multimedia_posts.multimediaPostsSetter</servlet-class>     
+</servlet>
+
+ 
+<servlet-mapping>
+<servlet-name>mmpost</servlet-name>
+<url-pattern>/mmpost</url-pattern>    
+</servlet-mapping>
+<!-- Mapping for multimedia postSetter end-->   
+ 
+
+<!-- Mapping for text postSetter -->
+<servlet>       
+<servlet-name>npost</servlet-name>    
+<servlet-class> global_services.text_posts.textPostSetter</servlet-class>     
+</servlet>
+
+<servlet-mapping>
+<servlet-name>npost</servlet-name>
+<url-pattern>/npost</url-pattern>    
+</servlet-mapping>
+<!-- Mapping for text postSetter end-->
+
+
+<!-- Mapping for comments handler -->
+<servlet>
+<servlet-name>comment</servlet-name>
+<servlet-class> global_services.comments_handler.commentsHandler</servlet-class>     
+</servlet>
+
+<servlet-mapping>
+<servlet-name>comment</servlet-name> 
+<url-pattern>/comment</url-pattern> 
+</servlet-mapping>
+<!-- Mapping for comments handler end--> 
+
+
+<!-- Mapping for all posts -->
+<servlet>        
+<servlet-name>allposts</servlet-name>
+<servlet-class> global_services.floodall_posts.floodPosts</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>allposts</servlet-name>
+<url-pattern>/SendAllData</url-pattern>    
+</servlet-mapping>
+<!-- Mapping for allposts end-->
+
+
+
+<welcome-file-list> 
+<welcome-file>cover.html</welcome-file>      
+</welcome-file-list> 
+
+</web-app>

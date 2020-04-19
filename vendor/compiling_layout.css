@@ -1,0 +1,29 @@
+.extremely-font {
+  font-size: 70px;
+  font-weight: 100px;
+  -webkit-transform: 0.5s font-weight;
+  -moz-transform: 0.5s font-weight;
+  -ms-transform: 0.5s font-weight;
+  -o-transform: 0.5s font-weight; }
+  .extremely-font:hover {
+    -webkit-transform: 0.5s font-weight;
+    -moz-transform: 0.5s font-weight;
+    -ms-transform: 0.5s font-weight;
+    -o-transform: 0.5s font-weight;
+    font-weight: 110px; }
+
+.big-font {
+  font-size: 50px;
+  font-weight: 30px;
+  -webkit-transform: 0.5s font-weight;
+  -moz-transform: 0.5s font-weight;
+  -ms-transform: 0.5s font-weight;
+  -o-transform: 0.5s font-weight; }
+  .big-font:hover {
+    -webkit-transform: 0.5s font-weight;
+    -moz-transform: 0.5s font-weight;
+    -ms-transform: 0.5s font-weight;
+    -o-transform: 0.5s font-weight;
+    font-weight: 40px; }
+
+/*# sourceMappingURL=compiling_layout.css.map */

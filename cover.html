@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Infomedia</title>
+  </head>
+  <body class="bg-gradient-dark">
+    <section class="text-center h2 pt-3"><p class="text-muted"><i class="fa fa-globe"></i>&nbsp;Infomedia</p></section>
+
+    <section class="jumbotron text-center bg-transparent " style="margin-top: 6%;margin-bottom: auto;">
+      <span class="display-3 font-weight-bold text-light"><i class="fa fa-globe"></i>&nbsp;Infomedia </span><br>
+      <p class="text-justify text-light h3 font-weight-normal text-break w-50 mx-auto mt-5 text-monospace" id="IntroText" style="height: 100px">
+        
+      </p>
+      <a href="http://localhost:8080/SocialMedia/index.html" class="text-decoration-none" id="LoginBtn" hidden><button class="btn btn-lg btn-white text-dark mt-5">Connect to knowledge</button></a>
+    </section>
+
+    <section class="fixed-bottom text-center text-muted mb-5">
+      <span class="font-weight-normal h4"> A social networking website project by @Pravleen @Chandan @Harish </span>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+  <script type="text/javascript">
+    var i=0;
+    var intro = "Info media helps you to connect to the world filled with people with great idea and teaching skills and professionals hence at Infomedia all can connect and upgrade the world with innovative ideas.";
+    var theIntro = document.getElementById("IntroText");
+    var introLength = intro.length;
+    var typerAnim = setInterval(function () {
+        if(i < intro.length){
+          theIntro.innerHTML += intro.charAt(i);
+          i += 1;
+        }
+        else{
+          clearInterval(typerAnim);
+          document.getElementById("LoginBtn").hidden = false;
+        }
+    }, 60);
+  </script>
+</html>

@@ -1,0 +1,35 @@
+.extremely-font
+{
+	font-size: $huge-font-size;
+	font-weight: $heavy-font-weight;
+}
+
+.big-font
+{
+	font-size: ($huge-font-size) - 30;
+	font-weight: $big-font-weight;
+}
+.normal-bold-font
+{
+	font-size: 30px;
+	font-weight: $big-font-weight;
+}
+.link-style
+{
+	text-decoration:none;
+	color: white;
+	&:hover
+	{
+		text-decoration:none;
+		color: white;
+	}
+}
+.iconize
+{
+	color:white;
+	font-size:28px;
+	&:hover
+	{
+	color:black;
+	} 
+}

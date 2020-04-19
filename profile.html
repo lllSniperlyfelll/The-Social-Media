@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="customcss/customstyle.css">
+    <title>Social media</title>
+  </head>
+  <body class="bg-primary">
+    <span class=" text-white" style="position: absolute;font-size: 600px;top:-400px;left: -150px">
+      <i class="fa fa-globe"></i>
+    </span>
+  
+    <section class="container" style="margin-top: 5%;">
+      <section class="jumbotron-fluid p-0 row bg-transparent">
+        <section class="col-md-6 m-0 p-0 alt-card2">
+          <section class="p-0 ">
+            <img src="images/body_bg.jpg" class="d-block card-img"  height="750px" style="opacity: 85%">
+            <section class="mt-auto mb-auto card-img-overlay h-25 text-center">
+
+              <ul class="list-group border-0">
+                <li class="list-group-item p-0 bg-transparent border-0">
+                  <img src="images/avatar.png" height="110px" width="110px" class="rounded-circle custom-card">
+                </li>
+                <li class="list-group-item font-weight-bold h4 text-white bg-transparent border-0" id="StatusSpan">
+                  No Data Avaliable<!-- "Try and keep trying and one day your dreams will come true" -->
+                </li>
+                <li class="list-group border-0 bg-transparent text-center">
+                  <section class="modal fade" id="StatusModal" role="dialog">
+                    <section class="modal-dialog modal-dialog-centered" role="document">
+                      <section class="modal-content custom-card">
+                        <section class="modal-header  bg-primary text-light h3">
+                          <span class="modal-title"><i class="fa fa-pencil"></i>&nbsp;New status</span>
+                        <button type="button" class="text-white custom-card rounded-circle h2 btn btn-danger" data-dismiss="modal">
+                          <i class="fa fa-times"></i>
+                        </button>
+                        </section>
+                        <section class="modal-body">
+                          <section class="form-group">
+                            <label class="form-text">Enter status here</label>
+                            <textarea class="form-control custom-card" rows="4" style="font-size: 20px" id="TheStatus"></textarea>
+                            <span class="text-danger font-weight-bold" id="StatusMaxLengthWarning">
+                             
+                            </span>
+                          </section>
+                        </section>
+                        <section class="modal-footer">
+                          <button class="btn btn-primary custom-card" id="StatusSaveBtn" onclick="updateInfo(document.getElementById('TheStatus').value,'Add your blog');">Save changes</button>
+                        </section>
+                      </section>
+                    </section>
+                    
+                  </section>
+                  <!-- kjdsgjdkghkdjhjfihioohogfjjio -->
+                  <button class="btn bg-dark text-light mx-auto rounded-circle" style="font-size: 20px" data-toggle="modal" data-target="#StatusModal"><i class="fa fa-pencil-square-o"></i></button>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </section>
+
+        <section class="col-md-6 m-0 p-0 alt-card" style="overflow: hidden;">
+          <section class="jumbotron-fluid bg-white h-100 p-0 m-0">
+            <section class="container-fluid p-0 m-0">
+              <table class="table p-0 m-0 table-striped table-hover">
+                <thead class="bg-primary text-white text-center" style="padding: 100px">
+                  <tr class="border-0"><th class="big-font border-0"><i class="fa fa-globe"></i>Social Media</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><span style="font-size: 35px"> Name:</span></td></tr>
+                  <tr><td><span style="font-size: 25px" id="NameSpan">No Data Avaliable <!-- Users name --></span></td></tr>
+
+                  <tr><td><span style="font-size: 35px"> Username:</span></td></tr>
+                  <tr><td><span style="font-size: 25px" id="EmailSpan">No Data Avaliable <!-- Something@example.com --></span></td></tr>
+
+                  <tr><td><span style="font-size: 35px"> Gender:</span></td></tr>
+                  <tr><td><span style="font-size: 25px" id="GenderSpan">No Data Avaliable<!--  Male --></span></td></tr>
+
+                  <tr><td>
+                    <section class="modal fade" id="BlogModal" role="dialog">
+                    <section class="modal-dialog modal-dialog-centered" role="document">
+                      <section class="modal-content custom-card">
+                        <section class="modal-header  bg-primary text-light h3">
+                          <span class="modal-title"><i class="fa fa-pencil"></i>&nbsp;Add Blog</span>
+                        <button type="button" class="text-white custom-card rounded-circle h2 btn btn-danger" data-dismiss="modal">
+                          <i class="fa fa-times"></i>
+                        </button>
+                        </section>
+                        <section class="modal-body">
+                          <section class="form-group">
+                            <label class="form-text">Blog</label>
+                            <input type="url" class="form-control" id="TheBlog" placeholder="Enter your blog URL here ...">
+                          </section>
+                        </section>
+                        <section class="modal-footer">
+                          <button class="btn btn-primary custom-card" onclick="updateInfo('Add your status',document.getElementById('TheBlog').value);">Save changes</button>
+                        </section>
+                      </section>
+                    </section>
+                    
+                  </section>
+                    <section class="row">
+                      <section class="col-md-6 text-left">
+                        <span style="font-size: 35px"> Blog: </span>  
+                      </section>
+                      <section class="col-md-6 text-right ">
+                        <button class=" border-0 mx-auto bg-transparent p-0" style="font-size: 30px;outline: 0" data-toggle="modal" data-target="#BlogModal"><i class="fa fa-pencil-square-o"></i></button>  
+                      </section>
+                    </section>
+                    
+                  </td></tr>
+                  <tr><td><span style="font-size: 25px" id="BlogSpan">No Data Avaliable <!-- www.myblog.com --></span></td></tr>
+
+                  <tr><td><button class="btn btn-block text-white bg-primary rounded-0 ml-1 mr-1" onclick="signOut()"><span class="h4">Sign out</span></button></td></tr>
+                </tbody>
+              </table>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="static/profileloader.js"></script>
+  <script type="text/javascript" src="static/logouthandler.js"></script>
+
+  </body>
+</html>

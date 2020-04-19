@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="customcss/customstyle.css">
+
+    <title>Info Media</title>
+    <style type="text/css">
+    	.line-cut{
+    		width: 100%;
+    		display: -webkit-box;
+    		-webkit-box-orentation: vertical;
+    		-webkit-line-clamp: 3;
+    		overflow: hidden;
+    		text-overflow: ellipsis;
+    	}
+    </style>
+ <!--    <script type="text/javascript" src="static/autologin.js"></script> -->
+  </head>
+  <body >
+    <!-- Old The Navbar -->
+    <!-- <section class="jumbotron-fluid sticky-top p-0">
+      <nav class="navbar navbar-light bg-primary navbar-expand-md"> 
+        <section class="navbar-brand text-white big-font " >
+         <a href="#" class="link-style">
+         <i class="fa fa-globe"></i> 
+         Info Media</a>
+        </section>
+
+        <section class="collapse navbar-collapse" style="margin-right: 0">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active ">
+               <span class="iconize"><i class="fa fa-list-alt"></i>
+                dashboard
+                </span> 
+              </a>
+            </li>
+            
+            <li class="nav-item ml-5">
+              <a href="#" class="nav-link active ">
+               <span class="iconize"><i class="fa fa-users"></i>
+                Friends
+                </span> 
+              </a>
+            </li>
+
+            <li class="nav-item ml-5">
+              <a href="#" class="nav-link active ">
+               <span class="iconize"><i class="fa fa-qq"></i>
+                Status
+                </span> 
+              </a>
+            </li>
+            
+            <li class="nav-item dropdown ml-5">
+              
+             <a href="http://localhost:8080/SocialMedia/auth_page.html" class="nav-link active text-white" id="signUp">
+                <span class="iconize"><i class="fa fa-exclamation-circle"></i>
+                    Sign up
+                </span> 
+            </a>
+              <a href="#" class="nav-link active dropdown-toggle text-white" id="profileMore" role="button" data-toggle="dropdown">
+               <span class="iconize"><i class="fa fa-align-justify"></i>
+                More ...
+                </span> 
+              </a>
+
+              <div id="demo" class="dropdown-menu">
+                  <div class="card border-0" style="width:400px">
+                    <img class="card-img d-block" src="images\avatar.png" height="300px" width="200px" alt="Card image">
+                    <div class="card-body">
+                    <h4 class="card-title">User</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a class="font-weight-bold" href="profile.html"><i class="fa fa-universal-access"></i>&nbsp;Profile</a><br>
+                    <a class="font-weight-bold" href="#"><i class="fa fa-user"></i>&nbsp;Settings</a><br>
+                    <a class="font-weight-bold" href="#"><i class="fa fa-sign-out"></i>&nbsp;Logout</a>
+                    </div>
+                  </div>
+                </div>
+          </li>
+          </ul>
+        </section>
+      </nav>
+    </section> -->
+    <!--Old The Navbar End -->
+    
+    <!-- New Navbar -->
+    <section class="sticky-top">
+      <section class="collapse container-fluid bg-dark text-white" id="NavbarContent">
+        <section class="row">
+          <section class="col-md bg-dark">
+            <section class="h2 text-white-50">About</section>
+            <p class="text-white-50 text-justify w-75"> Infomedia is made using bootstraap, css, js and some java 
+            the website is a mini project of hmi which allows users to share Educational and Professional
+            content.</p>
+            <p class="text-white-50 text-justify h4 font-weight-normal">Contact us
+              <p class="text-white-50 text-justify font-weight-normal"><i class="fa fa-facebook-official"></i> @Infomediaofficial
+              <br><i class="fa fa-instagram"></i> @Infomedia
+              <br><i class="fa fa-phone-square"></i> 022 245-876-888
+            </p>
+            </section>
+ 
+
+          <section class="col-md bg-dark">
+            <section class="bg-gradient-primary card custom-card w-50 mx-auto mt-2 rounded">
+              <img src="images/icons/user.svg" height="100px" width="100px" class="card-img-top">
+              <section class="card-header">
+                The status here
+              </section>
+              <section class="card-body pb-1">
+                <p class="text-white">
+                  <i class="fa fa-envelope"></i> test@testemail.com<br>
+                  <a href="profile.html" class="text-decoration-none text-light" style="text-decoration: none"><i class="fa fa-user"></i> View profile</a><br>
+                </p>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <nav class="navbar navbar-dark bg-dark navbar-expand ">
+        <section class="navbar-brand font-weight-normal">
+          <span class="h3 font-weight-normal"><i class="fa fa-globe"></i>&nbsp;Infomedia</span>
+        </section>
+        <ul class="navbar-nav mx-auto text-right w-75">
+          <li class="nav-item mx-auto">
+            <a href="#" class="font-weight-normal nav-link h5">Home <i class="fa fa-home"></i></a>
+          </li>
+          <li class="nav-item mx-auto">
+            <a href="#" class="font-weight-normal nav-link h5">Dashboard <i class="fa fa-th-list"></i></a>
+          </li>
+          <li class="nav-item mx-auto">
+            <a href="#" class="font-weight-normal nav-link h5">Sign in <i class="fa fa-sign-out"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+
+      <nav class="navbar navbar-dark bg-dark pb-0 pt-1 text-center ml-auto rounded-bottom" style="width: 3%">
+      <button id="pullDown" class="navbar-toggler border-0 ml-auto text-left p-0 pb-1" type="button" data-toggle="collapse" data-target="#NavbarContent" style="outline: 0">
+        <span class='h4 text-white' ><i class='fa fa-arrow-circle-down'></i></span>
+      </button>
+      </nav>
+    </section>
+
+    <!-- New Navbar End-->
+
+    
+
+    
+
+    <section class="container-fluid" id="ParentContainer">
+
+
+
+        <!-- Card 1 -->
+        <section class="bg-transparent row mt-5">
+            <section class="col-md-7 mx-auto">
+                <section class="row bg-transparent">
+                    <section class="col-md-7">
+                        <section class="card border-secondary custom-card mx-auto">
+                        <section class="card-header border-0 bg-dark text-white" style="margin-bottom: 0.5px">
+                            <section class="input-group">
+                                <section class="input-group-prepend">
+                                    <img src="images/icons/user.svg" height="40px" width="40px">&nbsp;
+                                </section>
+                                <section class="h4 pt-1">Sniperlyfe</section>
+                            </section>
+                        </section>
+                        <img src="images/body_bg.jpg" class="card-img-top d-block rounded-0 img-fluid">
+                        <section class="card-body">
+                            <section class="card-info text-primary font-weight-bold">
+                                #Abstract #Amazing
+                            </section>
+                            <section class="card-text">
+                                <hr>
+                                <p class="line-cut">
+                                The pic is developed by a high end graphic software and it took almost 8h to proccess
+                                and 2 hrs to shrink the res
+                                </p>
+                            </section>
+                        </section>
+                        <section class="card-footer text-center p-0 " style="padding-bottom: 0px">
+                            <table class="table table-bordered table-active table-hover table-striped">
+                                <tbody>
+                                    <tr class="p-0">
+                                        <td class="pb-0 pt-0"><span style="font-size: 22px" class="text-danger"><i class="fa fa-heart"></i>&nbsp;</span></td>
+                                        <td class="pb-0 pt-0"><span style="font-size: 22px" class="text-gray-dark"><i class="fa fa-share"></i>&nbsp;</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <section class="jumbotron-fluid p-3">
+                                   <table  width="100%">
+                                           <tr>
+                                            <td rowspan="2" style="width: 12%;"> <img src="images/icons/user.svg" height="45px" width="50px" class="d-block custom-card rounded-circle"></td>
+                                            <td class="text-left font-weight-bold text-primary"><span>Sniperlyfe</span></td>
+                                           </tr>
+
+                                           <tr>
+                                            <td class="text-left"><span class="font-weight-normal">This is a test comment for the feature</span></td>
+                                           </tr>
+                                   </table>
+
+                                   <table  width="100%" class="mt-2">
+                                           <tr>
+                                            <td rowspan="2" style="width: 12%;"> <img src="images/icons/user.svg" height="45px" width="50px" class="d-block custom-card rounded-circle"></td>
+                                            <td class="text-left font-weight-bold text-primary"><span>Sniperlyfe</span></td>
+                                           </tr>
+
+                                           <tr>
+                                            <td class="text-left"><span class="font-weight-normal">This is a test comment for the feature</span></td>
+                                           </tr>
+                                   </table>
+                                </section>
+                                <section class="container-fluid mb-1">
+                                    <section class="input-group ">
+                                        
+                                        <input type="text" name="" class="form-control border-dark card custom-card " placeholder="Write Something here ... " style="font-size: 15px;border-radius: 50px">
+                                        <button class="input-group-append bg-primary btn rounded-circle custom-card text-white ml-2">
+                                            <span style="font-size: 15px"><i class="fa fa-paper-plane"></i></span></button>
+                                        
+                                    </section>
+                                </section>
+                        </section>
+                    </section>        
+                    </section>
+                     <section class="col-md-5 container mx-auto">
+                        <ul class="list-group border-0 bg-secondary rounded card custom-card position-fixed">
+                            <span class=" text-light text-muted" >Advertisment</span>
+                            <li class="list-group-item border-0 bg-transparent"><img src="images/ad1.jpg" class="d-block img-thumbnail" height="400px" width="400px"></li>
+                            <li class="list-group-item border-0 bg-transparent"><img src="images/ad2.png" class="d-block img-thumbnail" height="400px" width="400px"></li>
+                            <li class="list-group-item border-0 bg-transparent"><img src="images/ad3.png" class="d-block img-thumbnail" height="400px" width="400px"></li>
+                        </ul>
+                    </section>
+                </section>  
+            </section>
+    	</section>
+        <!-- Card 1 end-->
+
+
+
+        <!-- Text card 1-->
+        
+        <!--<section class="bg-transparent row mt-5">
+          <section class="col-md-7 mx-auto">
+            <section class="card  border-0 bg-transparent mx-auto">
+              <section class="card-header custom-card">
+                  <section class="input-group">
+                      <section class="input-group-prepend">
+                          <img src="images/icons/user.svg" height="40px" width="40px">&nbsp;
+                      </section>
+                      <input type="text" name="" value="Sniperlyfe" class="bg-transparent border-0 h4 p-0">
+                  </section>
+              </section>
+              <section class="card-body bg-white custom-card">
+                  <section class="card-text ">
+                      <p class="line-cut text-post-font" style="max-height: 300px ;overflow: auto" >
+                        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                        1914 translation by H. Rackham
+                        "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+                      </p>
+                  </section>
+              </section>
+              <section class="card-footer text-center p-0 w-60 custom-card " style="padding-bottom: 0px">
+                  <table class="table table-bordered table-active table-hover table-striped">
+                      <tbody>
+                          <tr class="p-0">
+                              <td class="pb-0 pt-0"><span style="font-size: 22px" class="text-danger"><i class="fa fa-heart"></i>&nbsp;</span></td>
+                              <td class="pb-0 pt-0"><span style="font-size: 22px" class="text-gray-dark"><i class="fa fa-share"></i>&nbsp;</span></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <section class="jumbotron-fluid p-3">
+                         <table  width="100%">
+                                 <tr>
+                                  <td rowspan="2" style="width: 12%;"> <img src="images/icons/user.svg" height="45px" width="50px" class="d-block custom-card rounded-circle"></td>
+                                  <td class="text-left font-weight-bold text-primary"><span>Sniperlyfe</span></td>
+                                 </tr>
+
+                                 <tr>
+                                  <td class="text-left"><span class="font-weight-normal">This is a test comment for the feature</span></td>
+                                 </tr>
+                         </table>
+
+                         <table  width="100%" class="mt-2">
+                                 <tr>
+                                  <td rowspan="2" style="width: 12%;"> <img src="images/icons/user.svg" height="45px" width="50px" class="d-block custom-card rounded-circle"></td>
+                                  <td class="text-left font-weight-bold text-primary"><span>Sniperlyfe</span></td>
+                                 </tr>
+
+                                 <tr>
+                                  <td class="text-left"><span class="font-weight-normal">This is a test comment for the feature</span></td>
+                                 </tr>
+                         </table>
+                      </section>
+                      <section class="container mb-1 ml-0">
+                          <section class="input-group ">
+                              
+                              <input type="text" name="" class="form-control border-primary" placeholder="Write Something here ... " style="width:50%;font-size: 15px;border-radius: 50px">
+                              <button class="input-group-append bg-primary btn rounded-circle custom-card text-white ml-2">
+                                  <span style="font-size: 15px"><i class="fa fa-paper-plane"></i></span></button>
+                              
+                          </section>
+                      </section>
+              </section>
+          </section>  
+          </section>
+        </section> -->
+        <!-- Text card 1 end-->
+
+
+
+
+
+
+
+        <!-- Card 2 -->
+<!--         <section class="bg-transparent row mt-5">
+            <section class="col-md-7 mx-auto">
+                <section class="row bg-transparent">
+                    <section class="col-md-7">
+                        <section class="card border-secondary custom-card mx-auto">
+                        <section class="card-header border-0 bg-dark text-white" style="margin-bottom: 0.5px">
+                            <section class="input-group">
+                                <section class="input-group-prepend">
+                                    <img src="images/icons/user.svg" height="40px" width="40px">&nbsp;
+                                </section>
+                                <section class="h4 pt-1">Sniperlyfe</section>
+                            </section>
+                        </section>
+                        <img src="images/body_bg1.jpg" class="card-img-top d-block rounded-0 img-fluid">
+                        <section class="card-body">
+                            <section class="card-info text-primary font-weight-bold">
+                                #Abstract #Amazing
+                            </section>
+                            <section class="card-text">
+                                <hr>
+                                <p class="line-cut">
+                                The pic is developed by a high end graphic software and it took almost 8h to proccess
+                                and 2 hrs to shrink the res
+                                </p>
+                            </section>
+                        </section>
+                        <section class="card-footer text-center p-0 " style="padding-bottom: 0px">
+                            <table class="table table-bordered table-active table-hover table-striped">
+                                <tbody>
+                                    <tr class="p-0">
+                                        <td class="pb-0 pt-0"><span style="font-size: 22px" class="text-danger"><i class="fa fa-heart"></i>&nbsp;</span></td>
+                                        <td class="pb-0 pt-0"><span style="font-size: 22px" class="text-gray-dark"><i class="fa fa-share"></i>&nbsp;</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <section class="jumbotron-fluid p-3">
+                                   <table  width="100%">
+                                           <tr>
+                                            <td rowspan="2" style="width: 12%;"> <img src="images/icons/user.svg" height="45px" width="50px" class="d-block custom-card rounded-circle"></td>
+                                            <td class="text-left font-weight-bold text-primary"><span>Sniperlyfe</span></td>
+                                           </tr>
+
+                                           <tr>
+                                            <td class="text-left"><span class="font-weight-normal">This is a test comment for the feature</span></td>
+                                           </tr>
+                                   </table>
+
+                                   <table  width="100%" class="mt-2">
+                                           <tr>
+                                            <td rowspan="2" style="width: 12%;"> <img src="images/icons/user.svg" height="45px" width="50px" class="d-block custom-card rounded-circle"></td>
+                                            <td class="text-left font-weight-bold text-primary"><span>Sniperlyfe</span></td>
+                                           </tr>
+
+                                           <tr>
+                                            <td class="text-left"><span class="font-weight-normal">This is a test comment for the feature</span></td>
+                                           </tr>
+                                   </table>
+                                </section>
+                                <section class="container-fluid mb-1">
+                                    <section class="input-group ">
+                                        
+                                        <input type="text" name="" class="form-control border-dark card custom-card " placeholder="Write Something here ... " style="font-size: 15px;border-radius: 50px">
+                                        <button class="input-group-append bg-primary btn rounded-circle custom-card text-white ml-2">
+                                            <span style="font-size: 15px"><i class="fa fa-paper-plane"></i></span></button>
+                                        
+                                    </section>
+                                </section>
+                        </section>
+                    </section>        
+                    </section>
+                     <section class="col-md-5 container mx-auto hide"></section>
+                </section>  
+            </section>
+      </section> -->
+        <!-- Card 2 end -->
+
+
+
+        <!-- Card 3-->
+<!--         <section class="bg-transparent row mt-5">
+            <section class="col-md-7 mx-auto">
+                <section class="row bg-transparent">
+                    <section class="col-md-7">
+                        <section class="card border-secondary custom-card mx-auto">
+                        <section class="card-header border-0 bg-dark text-white" style="margin-bottom: 0.5px">
+                            <section class="input-group">
+                                <section class="input-group-prepend">
+                                    <img src="images/icons/user.svg" height="40px" width="40px">&nbsp;
+                                </section>
+                                <section class="h4 pt-1">Sniperlyfe</section>
+                            </section>
+                        </section>
+                        <img src="images/body_bg_img.jpg" class="card-img-top d-block rounded-0 img-fluid">
+                        <section class="card-body">
+                            <section class="card-info text-primary font-weight-bold">
+                                #Abstract #Amazing
+                            </section>
+                            <section class="card-text">
+                                <hr>
+                                <p class="line-cut">
+                                The pic is developed by a high end graphic software and it took almost 8h to proccess
+                                and 2 hrs to shrink the res
+                                </p>
+                            </section>
+                        </section>
+                        <section class="card-footer text-center p-0 " style="padding-bottom: 0px">
+                            <table class="table table-bordered table-active table-hover table-striped">
+                                <tbody>
+                                    <tr class="p-0">
+                                        <td class="pb-0 pt-0"><span style="font-size: 22px" class="text-danger"><i class="fa fa-heart"></i>&nbsp;</span></td>
+                                        <td class="pb-0 pt-0"><span style="font-size: 22px" class="text-gray-dark"><i class="fa fa-share"></i>&nbsp;</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <section class="jumbotron-fluid p-3">
+                                   <table  width="100%">
+                                           <tr>
+                                            <td rowspan="2" style="width: 12%;"> <img src="images/icons/user.svg" height="45px" width="50px" class="d-block custom-card rounded-circle"></td>
+                                            <td class="text-left font-weight-bold text-primary"><span>Sniperlyfe</span></td>
+                                           </tr>
+
+                                           <tr>
+                                            <td class="text-left"><span class="font-weight-normal">This is a test comment for the feature</span></td>
+                                           </tr>
+                                   </table>
+
+                                   <table  width="100%" class="mt-2">
+                                           <tr>
+                                            <td rowspan="2" style="width: 12%;"> <img src="images/icons/user.svg" height="45px" width="50px" class="d-block custom-card rounded-circle"></td>
+                                            <td class="text-left font-weight-bold text-primary"><span>Sniperlyfe</span></td>
+                                           </tr>
+
+                                           <tr>
+                                            <td class="text-left"><span class="font-weight-normal">This is a test comment for the feature</span></td>
+                                           </tr>
+                                   </table>
+                                </section>
+                                <section class="container-fluid mb-1">
+                                    <section class="input-group ">
+                                        
+                                        <input type="text" name="" class="form-control border-dark card custom-card " placeholder="Write Something here ... " style="font-size: 15px;border-radius: 50px">
+                                        <button class="input-group-append bg-primary btn rounded-circle custom-card text-white ml-2">
+                                            <span style="font-size: 15px"><i class="fa fa-paper-plane"></i></span></button>
+                                        
+                                    </section>
+                                </section>
+                        </section>
+                    </section>        
+                    </section>
+                     <section class="col-md-5 container mx-auto hide">
+                    </section>
+                </section>  
+            </section>
+      </section> -->
+        <!-- Card 3 end -->
+
+
+
+    </section>
+
+
+
+
+<!-- Multimedia post Modal -->
+<section class="modal fade border-0" id="ImagePostModal" role="dialog" style="background: rgba(0,0,0,0.8)">
+  <section class="modal-dialog modal-dialog-centered bg-transparent border-0 " role="document" style="box-shadow: none;">
+      <section class="modal-content border-0  bg-transparent " style="box-shadow: none;">
+          <section class="modal-header  bg-transparent text-light h3 border-0 rounded p-0 mb-2" style="box-shadow: none;">
+              <button type="button" class="text-white custom-card rounded-circle h2 btn ml-auto btn-lg" data-dismiss="modal" style="background-color: red">
+                  <i class="fa fa-times"></i>
+              </button>
+          </section>
+          <section class="modal-body bg-white  rounded">
+            <section class="container-fluid">
+              <form  method="post" name="mmForm">
+                <section class="form-row">
+                  <section class="col-md text-center mb-4">
+                      <span class="h3 text-dark"><i class="fa fa-picture-o"></i>&nbsp;Post image</span>    
+                  </section>  
+                </section>
+
+                <section class="form-row">
+                  <section class="col-md mx-auto text-center">
+                    <label class="form-text text-dark">Preview here</label>
+                    <img src="images/preview.png" class="d-block card custom-card border-dark rounded p-1" height="300px" width="100%" id="imgPreview">
+                    
+                  </section>
+                </section>
+
+                <!-- The image upload -->
+                
+                <section class="form-row">
+                  <section class="col-md">
+                    <section class="input-group mt-3">
+                      <section class="custom-file">
+                          <input type="file" name="" class="custom-file-input custom-card p4" style="border-radius: 50px;background: url('images/preview.jpg');" accept="image/*" id="imagePost" required>
+                          <label class="custom-file-label" style="border-top-left-radius: 20px;border-bottom-left-radius: 20px" id="imagePostLabel">Choose an upload...</label>    
+                      </section>
+                    </section>
+                  </section>  
+                </section>
+
+                <!-- Description/Caption of image -->
+                <section class="form-row">
+                  <section class="col-md">
+                    <section class="input-group mt-3">
+                     <textarea class="form-control" placeholder="Caption or Describe your post here ..." rows="6" id="ImageCaption" required></textarea>
+                    </section>
+                  </section>  
+                </section>
+
+                <!-- Tags for image -->
+                <section class="form-row">
+                  <section class="col-md">
+                    <section class="input-group mt-3">
+                      <input type="text" name="" placeholder="Tags here e.g #Awesome, #StudyTime ..." class="form-control font-weight-bold text-primary" id="ImageTags" required>
+                      <section class="input-group-append text-white bg-dark btn">Tags</section>
+                    </section>
+                  </section>  
+                </section>
+
+              </form>
+            </section>
+          </section>
+          <section class="modal-footer p-0 mt-3 border-0" style="box-shadow: none;">
+              <button class="input-group-append btn-primary btn  btn-lg rounded-circle custom-card text-white mr-auto" type="submit" onclick="uploadMultimedia()">
+                <span style="font-size: 20px"><i class="fa fa-paper-plane"></i></span></button>
+          </section>
+      </section>
+  </section>
+</section>
+<!-- end -->
+
+
+<!-- The Post box -->
+    <section class="container bg-gradient-primary post-box p-4 text-left custom-card" id="postArea">
+        <section class="h2 font-weight-normal text-white">Post<br></section>
+        <section class="input-group">
+            <button class="input-group-append bg-light btn rounded-circle custom-card text-primary" id="textPostBtn">
+                <span style="font-size: 20px"><i class="fa fa-paper-plane"></i></span></button>&nbsp;
+            <input type="text" name="" class="form-control custom-card" placeholder="Write Something here ... " style="font-size: 20px;border-radius: 50px" id="textPost" required>
+        </section>
+        <section class="input-group mt-3">
+          <button class="btn text-light btn-dark mx-auto btn-block" style="font-size: 20px" data-toggle="modal" data-target="#ImagePostModal"><i class="fa fa-picture-o"></i> &nbsp;Post image</button>
+          </section>
+        </section>    
+    </section>
+<!-- The Post box end-->
+ 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="static/postscript.js"></script>
+<script type="text/javascript" src="static/loadposts.js"></script>
+
+<script type="text/javascript">
+  var postArea = document.getElementById("postArea");
+
+  var postAreaAnim
+
+</script>
+
+  </body>
+</html>
+
+
+<!-- box-custom-card: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15); -->
