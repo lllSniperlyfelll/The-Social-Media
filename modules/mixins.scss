@@ -1,0 +1,7 @@
+@mixin fade-effects($timeout, $property)
+{
+	-webkit-transform: $timeout $property;
+	-moz-transform: $timeout $property;
+	-ms-transform: $timeout $property;
+	-o-transform: $timeout $property;
+}

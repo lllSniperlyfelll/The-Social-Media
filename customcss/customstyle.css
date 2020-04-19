@@ -1,0 +1,148 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.extremely-font {
+  font-size: 70px;
+  font-weight: bolder; }
+
+.big-font {
+  font-size: 40px;
+  font-weight: bold; }
+
+.normal-bold-font {
+  font-size: 30px;
+  font-weight: bold; }
+
+.link-style {
+  text-decoration: none;
+  color: white; }
+  .link-style:hover {
+    text-decoration: none;
+    color: white; }
+
+.iconize {
+  color: white;
+  font-size: 28px; }
+  .iconize:hover {
+    color: black; }
+
+
+.custom-card{
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15);
+}
+.card-curve {
+  border-raduis: 7px; }
+
+.card-normal-curve {
+  border-radius: 10px; }
+
+.card-extreme-curve {
+  border-radius: 50px; }
+
+.alt-card{
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15);
+}
+.alt-card2{
+ box-shadow: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15);
+}
+.post-box{
+  position: fixed; 
+  bottom: 10px; 
+  right: -400px; 
+  width: 30%; 
+  z-index: 100;
+  transition: 0.5s right;
+  animation-name: postBoxAnim;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+
+}
+.post-box:hover{
+  position: fixed; 
+  bottom: 10px; 
+  right: 0px; 
+  width: 30%; 
+  z-index: 100;
+  transition: 0.5s right;
+}
+
+@keyframes postBoxAnim{
+  10%{
+    position: fixed; 
+    bottom: 10px; 
+    right: -400px; 
+    width: 30%; 
+    z-index: 100;
+    transition: 0.5s right;
+  }
+  40%{
+     position: fixed; 
+      bottom: 60px; 
+      right: 30px; 
+      width: 30%; 
+      z-index: 100;
+      transition: 0.5s right;
+  }
+
+  70%{
+     position: fixed; 
+      bottom: 60px; 
+      right: 30px; 
+      width: 30%; 
+      z-index: 100;
+      transition: 0.5s right;
+  }
+  100%{
+     position: fixed; 
+    bottom: 10px; 
+    right: -400px; 
+    width: 30%; 
+    z-index: 100;
+    transition: 0.5s right;
+  }
+}
+
+.primary-outline{
+  outline-color: 1px blue;
+}
+
+.text-post-font{
+  font-size: 17px;
+}
+
+.w-55{
+  width: 55%;
+}
+
+.w-60{
+  width: 60%;
+}
+
+.w-65{
+  width: 65%;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:powderblue;
+}
+
+.hide{
+  background: transparent;
+  height: 0.5px
+}
+/*# sourceMappingURL=customstyle.css.map */
