@@ -1,8 +1,6 @@
 import {cookieHandler} from "./cookiehandler.js";
 import {setInfo} from "./datastorage.js";
 
-import "babel-core/register";
-import "babel-polyfill";
 
 
 (() =>{
@@ -24,6 +22,7 @@ import "babel-polyfill";
 			}).then(response => response.json()).then(Itr => {
 				console.log("Setting user data from autologin");
 				setInfo(Itr["name"], Itr["email"], Itr["gender"], Itr["status"],Itr["blog"]);
+				document.getElementById("indexUserName").innerHTML += userName;
 			});
 		}
 		catch(e){
@@ -31,7 +30,7 @@ import "babel-polyfill";
 		}
 	}
 	else {
-		open("http://localhost:8080/SocialMedia/","_self");
+		open("http://localhost:8080/SocialMedia/auth_page.html","_self");
 	}
 })();
 

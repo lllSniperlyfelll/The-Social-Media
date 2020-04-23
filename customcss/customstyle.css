@@ -48,7 +48,7 @@ body {
 }
 .post-box{
   position: fixed; 
-  bottom: 10px; 
+  bottom: 40px;ottom: 40px; 
   right: -400px; 
   width: 30%; 
   z-index: 100;
@@ -61,7 +61,7 @@ body {
 }
 .post-box:hover{
   position: fixed; 
-  bottom: 10px; 
+  bobottom: 40px;
   right: 0px; 
   width: 30%; 
   z-index: 100;
@@ -71,9 +71,9 @@ body {
 @keyframes postBoxAnim{
   10%{
     position: fixed; 
-    bottom: 10px; 
+    bottom: 40px;
     right: -400px; 
-    width: 30%; 
+    width: 30%; s
     z-index: 100;
     transition: 0.5s right;
   }
@@ -96,7 +96,7 @@ body {
   }
   100%{
      position: fixed; 
-    bottom: 10px; 
+   bottom: 40px;
     right: -400px; 
     width: 30%; 
     z-index: 100;

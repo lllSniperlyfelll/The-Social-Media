@@ -83,7 +83,6 @@ function allowLogin () {
 	let thePasswordValue = loginFormObject["TheLoginPassword"].value;
 
 	if(theEmailValue != null && thePasswordValue != null && theEmailValue != "" && thePasswordValue != ""){
-
 		fetch("http://localhost:8080/SocialMedia/ulogin",{
 				method: 'POST',
 				mode: 'no-cors',

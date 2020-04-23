@@ -5,10 +5,10 @@ import {cookieHandler} from "./cookiehandler.js";
 
 const postTextData = (mssg) =>{
 	const cookieHandlerObject = new cookieHandler();
-	const userName = "kjbkjn";
+	const userName =  cookieHandlerObject.getCookie();
 	if(userName != null && userName != "" && userName != undefined){
 		const userPost = {
-			email: "test@test.com",
+			email: userName,
 			userpost: mssg
 		}
 		try{
@@ -42,13 +42,14 @@ const postTextData = (mssg) =>{
 const commentPost = (postId) =>{
 	console.log("COmmented on post id -> "+postId);
 	const cookieHandlerObject = new cookieHandler();
-	const userName = "commenting user";
+	const userName =  cookieHandlerObject.getCookie();
 	const theCommentByUser = document.getElementById(postId).value;
+	console.log(userName+" while ciommenting");
 	if(theCommentByUser != "" && theCommentByUser != null && theCommentByUser.length > 1)
 	{
 		if(userName != null && userName != "" && userName != undefined){
 			const userPost = {
-				email: "test@test.com",
+				email: userName,
 				postid: postId,
 				comments : theCommentByUser
 			}
@@ -103,7 +104,7 @@ const uploadMultimedia = (formName) =>{
 	console.log(imageFileName);
 	const imagePostData = {
 			imagePath: (window.imageFileName == null || window.imageFileName == "" || window.imageFileName.length < 1) ? ("na"):(window.imageFileName),
-			email: "test@test.com",
+			email: new cookieHandler().getCookie(),
 			caption: (imageCaption == null || imageCaption == "" || imageCaption.length < 1) ? ("na"):(imageCaption),
 			imageTags : (imageTags == null || imageTags == "" || imageTags.length < 1) ? ("na"):(imageTags)
 		}

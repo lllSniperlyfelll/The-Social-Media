@@ -64,7 +64,7 @@ public class floodPosts extends HttpServlet
 
 
   private String getComments(String postid){
-    String commentsData = "na";
+    String commentsData = "";
     try{
         databaseConnector dataBaseObject = new databaseConnector();
         Connection commentsDatabase = dataBaseObject.getCommentsdb();
